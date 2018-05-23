@@ -6,4 +6,4 @@ What the programming files do is the following:
   3. evaluate the accuracy
 The output is like below images:
 
-https://user-images.githubusercontent.com/39371515/40451485-b25d0620-5ed6-11e8-906e-dcf4f1d874b0.png
+![image](https://user-images.githubusercontent.com/39371515/40451485-b25d0620-5ed6-11e8-906e-dcf4f1d874b0.png)
