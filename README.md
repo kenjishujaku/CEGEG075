@@ -1,5 +1,5 @@
 # CEGEG075：Image Understanding Coursework
-This coursework aims to detect a car or cars in an image, using OpenCV package of Python. Sample images are downloaded from UIUC Image Database for Car Detection(http://cogcomp.org/Data/Car/).
+This coursework aims to detect a car or cars in an image, using OpenCV package of Python. Sample images are downloaded from UIUC Image Database for Car Detection (http://cogcomp.org/Data/Car/).
 
 What the programming files do is the following:
   1. train detectors on a number of sample images with machine learning algorithms
@@ -13,7 +13,7 @@ Green Box: Ground-Truth Box, Red Box: Detection
 
 There are mainly two files, scripts and xml_files. Each file is described below.
 
-# Scripts consist of three scripts 
+<h5> Scripts consist of three scripts </h5>
 1. train_HoG_SVM.py
 This is to train SVM classifier with HoG features in an image. To implement this, you need to create filies for storing positive samples and negative samples respectively. 
 The trained SVM classifier will be sotred as xml file in a specific folder
@@ -24,4 +24,5 @@ This is to combine multiple functions needed to carry out object detection. You 
 3. implement.py
 This is to perform object detection in test images and calculate overlaying rate of detection to ground truth box. The number of positive detection and false positive detection are also counted. 
 
-# xml files 
+<h5> xml files </h5>
+These xml files are detectors trained with specific features such as Harr-Like, HoG and LBP using opencv function. At detail, go to opencv document webpage (https://docs.opencv.org/3.3.0/dc/d88/tutorial_traincascade.html). These are used in method.py and implement.py
