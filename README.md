@@ -4,7 +4,7 @@ This coursework aims to detect a car or cars in an image, using OpenCV package o
 What the programming files do is the following:
   1. train detectors on a number of sample images with machine learning algorithms
   2. detect specific objects in an image
-  3. evaluate the accuracy
+  3. evaluate the accuracy (Intersection over Union)
   
 The detection is like below images:(Green Box: Ground-Truth Box, Red Box: Detection)
 
