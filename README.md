@@ -14,9 +14,9 @@ The detection is like below images:(Green Box: Ground-Truth Box, Red Box: Detect
 There are mainly two files, scripts and xml_files. Each file is described below.
 <h4> scripts </h4>
 1. train_HoG_SVM.py <br />
-This is to train SVM classifier with HoG features in an image. To implement this, you need to create filies for storing positive samples and negative samples respectively. The trained SVM classifier will be sotred as xml file in a specific folder.
+This is to train SVM classifier with HoG features in an image. To implement this, you need to create filies for storing positive samples and negative samples respectively. The trained SVM classifier will be sotred as xml file in a specific folder.<br />
 2. method.py <br />
-This is to combine multiple functions needed to carry out object detection. You have to specify your own file pathes of created xml files of classifiers.
+This is to combine multiple functions needed to carry out object detection. You have to specify your own file pathes of created xml files of classifiers.<br />
 3. implement.py <br />
 This is to perform object detection in test images and calculate overlaying rate of detection to ground truth box. The number of positive detection and false positive detection are also counted. 
 
