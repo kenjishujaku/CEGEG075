@@ -6,23 +6,21 @@ What the programming files do is the following:
   2. detect specific objects in an image
   3. evaluate the accuracy
   
-The detection is like below images:
+The detection is like below images:(Green Box: Ground-Truth Box, Red Box: Detection)
 
 <img src="https://user-images.githubusercontent.com/39371515/40451676-4a7c957e-5ed7-11e8-8161-39db4e15a5ae.png" width="430"><img src="https://user-images.githubusercontent.com/39371515/40451685-51146f2e-5ed7-11e8-80b4-91dac32a32e5.png" width="430">
-Green Box: Ground-Truth Box, Red Box: Detection
+
 
 There are mainly two files, scripts and xml_files. Each file is described below.
-
 <h5> Scripts consist of three scripts </h5>
 1. train_HoG_SVM.py
-This is to train SVM classifier with HoG features in an image. To implement this, you need to create filies for storing positive samples and negative samples respectively. 
-The trained SVM classifier will be sotred as xml file in a specific folder
+This is to train SVM classifier with HoG features in an image. To implement this, you need to create filies for storing positive samples and negative samples respectively. The trained SVM classifier will be sotred as xml file in a specific folder
 
 2. method.py
-This is to combine multiple functions needed to carry out object detection. You have to specify your own file pathes of created xml files of classifiers
+This is to combine multiple functions needed to carry out object detection. You have to specify your own file pathes of created xml files of classifiers.
 
 3. implement.py
 This is to perform object detection in test images and calculate overlaying rate of detection to ground truth box. The number of positive detection and false positive detection are also counted. 
 
 <h5> xml files </h5>
-These xml files are detectors trained with specific features such as Harr-Like, HoG and LBP using opencv function. At detail, go to opencv document webpage (https://docs.opencv.org/3.3.0/dc/d88/tutorial_traincascade.html). These are used in method.py and implement.py
+These xml files are detectors trained with specific features such as Harr-Like, HoG and LBP using opencv function. At detail, go to opencv document webpage (https://docs.opencv.org/3.3.0/dc/d88/tutorial_traincascade.html). These are used in method.py and implement.py.
