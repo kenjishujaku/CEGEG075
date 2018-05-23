@@ -27,6 +27,6 @@ These xml files are detectors trained with specific features such as Harr-Like, 
 
 <h3> Usage and Notes </h3>
 Download these files and scripts, and excute on python. <br />
-Make sure that sample images are sotred in files and adjust the path names in a script<br />
+Make sure that sample images are stored in files and adjust the path names in a script<br />
 There is no guarantee that this will work perfectly <br />
 Noted that some versions of python do not support SVM related functions and LBP classifier
